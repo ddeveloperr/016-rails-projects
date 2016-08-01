@@ -11,12 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160801162621) do
+ActiveRecord::Schema.define(version: 20160801174853) do
 
   create_table "books", force: :cascade do |t|
     t.string   "name"
     t.string   "caategory"
     t.decimal  "price"
+    t.integer  "isbn"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "searches", force: :cascade do |t|
+    t.string   "keywords"
+    t.string   "category"
+    t.decimal  "min_price"
+    t.decimal  "max_price"
     t.integer  "isbn"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
