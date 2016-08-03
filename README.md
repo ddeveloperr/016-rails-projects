@@ -1,9 +1,8 @@
-== README
 
- ####Build a search capable data-driven Ruby on Rails application!
+###Build a search capable data-driven Ruby on Rails application!
 ==================================================================
 
-I LEARN here:
+####I LEARN here:
 =============
 
 1. How to build simple search engine;
